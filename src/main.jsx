@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { createRoot } from "react-dom/client";
+import Messenger from "./routes/Messenger";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -7,7 +8,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/messenger",
-    element: <p>Hello Messenger</p>,
+    element: <Messenger />,
+  },
+  {
+    path: "/notification",
+    element: <p>Hello Notification</p>,
   },
 ]);
 
